@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "bioargo"
+version = "0.1.1"
+description = ""
+authors = ["Bror Jonsson <brorfred@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+scipy = "^1.3"
+numpy = "^1.17"
+matplotlib = "^3.1"
+cmocean = "^2.0"
+seaborn = "^0.9.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+
+[tool.poetry.scripts]
+scatterplot = 'bioargo:process_float'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
